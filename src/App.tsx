@@ -5,7 +5,7 @@ function App() {
   const verifyUser = async () => {
 
     const urlParams = new URLSearchParams(window.location.search)
-    const userID = urlParams.get("userID")
+    const userID = urlParams.get("userId")
     const secret = urlParams.get("secret")
     if (userID && secret) {
       await account.updateVerification(userID, secret)
